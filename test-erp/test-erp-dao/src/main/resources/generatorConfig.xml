@@ -49,18 +49,18 @@
         <jdbcConnection driverClass="${generator.jdbc.driver}"
                         connectionURL="${generator.jdbc.url}"
                         userId="${generator.jdbc.username}"
-                        password="yehao2873039" />
+                        password="111111" />
 
         <!-- model生成 -->
-        <javaModelGenerator targetPackage="com.test.erp.dao.model" targetProject="D:/ideaworkspace/test/test-erp/test-erp-dao/src/main/java" />
+        <javaModelGenerator targetPackage="com.test.erp.dao.model" targetProject="D:/WorkSpace/gittest/zxfgithub/test-erp/test-erp-dao/src/main/java" />
 
         <!-- MapperXML生成 -->
-        <sqlMapGenerator targetPackage="com.test.erp.dao.mapper" targetProject="D:/ideaworkspace/test/test-erp/test-erp-rpc-service/src/main/java" />
+        <sqlMapGenerator targetPackage="com.test.erp.dao.mapper" targetProject="D:/WorkSpace/gittest/zxfgithub/test-erp/test-erp-rpc-service/src/main/java" />
 
         <!-- Mapper接口生成 -->
-        <javaClientGenerator targetPackage="com.test.erp.dao.mapper" targetProject="D:/ideaworkspace/test/test-erp/test-erp-dao/src/main/java" type="XMLMAPPER" />
+        <javaClientGenerator targetPackage="com.test.erp.dao.mapper" targetProject="D:/WorkSpace/gittest/zxfgithub/test-erp/test-erp-dao/src/main/java" type="XMLMAPPER" />
 
         <!-- 需要映射的表 -->
-                                    <table tableName="upms_user" domainObjectName="UpmsUser"></table>
+                                    <table tableName="users" domainObjectName="Users"></table>
                         </context>
 </generatorConfiguration>

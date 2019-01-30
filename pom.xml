@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0.0</version>
     <modules>
-        <module>test-common</module>
+       <module>test-common</module>
         <module>test-admin</module>
         <module>test-erp</module>
     </modules>

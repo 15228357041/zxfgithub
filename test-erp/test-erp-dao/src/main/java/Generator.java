@@ -13,8 +13,8 @@ public class Generator {
 	// 根据命名规范，只修改此常量值即可
 
 	private static String MODULE = "test-erp";
-	private static String DATABASE = "tour_bus";
-	private static String TABLE_PREFIX = "upms_user";
+	private static String DATABASE = "geely";
+	private static String TABLE_PREFIX = "users";
 	private static String PACKAGE_NAME = "com.test.erp";
 	private static String JDBC_DRIVER = PropertiesFileUtil.getInstance("generator").get("generator.jdbc.driver");
 	private static String JDBC_URL = PropertiesFileUtil.getInstance("generator").get("generator.jdbc.url");
