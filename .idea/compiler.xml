@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="test-admin" />
+        <module name="test-common" />
+        <module name="test-erp-client" />
+        <module name="test-erp-common" />
+        <module name="test-erp-dao" />
+        <module name="test-erp-rpc-api" />
+        <module name="test-erp-rpc-service" />
+        <module name="test-erp-server" />
+        <module name="u8-admin" />
+        <module name="u8-agent-client" />
+        <module name="u8-agent-common" />
+        <module name="u8-agent-dao" />
+        <module name="u8-agent-rpc-api" />
+        <module name="u8-agent-rpc-service" />
+        <module name="u8-agent-server" />
+        <module name="u8-common" />
+        <module name="u8-erp-client" />
+        <module name="u8-erp-common" />
+        <module name="u8-erp-dao" />
+        <module name="u8-erp-rpc-api" />
+        <module name="u8-erp-rpc-service" />
+        <module name="u8-erp-server" />
+        <module name="u8-trading-client" />
+        <module name="u8-trading-common" />
+        <module name="u8-trading-dao" />
+        <module name="u8-trading-rpc-api" />
+        <module name="u8-trading-rpc-service" />
+        <module name="u8-trading-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="test-admin" target="1.8" />
+      <module name="test-common" target="1.8" />
+      <module name="test-erp" target="1.8" />
+      <module name="test-erp-client" target="1.8" />
+      <module name="test-erp-common" target="1.8" />
+      <module name="test-erp-dao" target="1.8" />
+      <module name="test-erp-rpc-api" target="1.8" />
+      <module name="test-erp-rpc-service" target="1.8" />
+      <module name="test-erp-server" target="1.8" />
+      <module name="test-main" target="1.8" />
+      <module name="u8-admin" target="1.8" />
+      <module name="u8-common" target="1.8" />
+      <module name="u8-erp" target="1.5" />
+      <module name="u8-erp-client" target="1.8" />
+      <module name="u8-erp-common" target="1.5" />
+      <module name="u8-erp-dao" target="1.8" />
+      <module name="u8-erp-rpc-api" target="1.5" />
+      <module name="u8-erp-rpc-service" target="1.8" />
+      <module name="u8-erp-server" target="1.5" />
+      <module name="u8-main" target="1.5" />
+      <module name="u8-trading" target="1.5" />
+      <module name="u8-trading-client" target="1.8" />
+      <module name="u8-trading-common" target="1.5" />
+      <module name="u8-trading-dao" target="1.7" />
+      <module name="u8-trading-rpc-api" target="1.5" />
+      <module name="u8-trading-rpc-service" target="1.7" />
+      <module name="u8-trading-server" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
+  </component>
+</project>
