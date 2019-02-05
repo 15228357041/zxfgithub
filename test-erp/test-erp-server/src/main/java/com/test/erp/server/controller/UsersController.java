@@ -1,12 +1,13 @@
 package com.test.erp.server.controller;
 
 
-import com.test.erp.dao.model.Users;
-import com.test.erp.rpc.api.UsersService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.test.erp.rpc.api.BossPopedomService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.annotation.Resource;
+import java.lang.reflect.Method;
 
 /**
  * <p>
@@ -19,13 +20,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/users")
 public class UsersController {
-    @Autowired
-    UsersService usersService;
+    @Resource
+    BossPopedomService bossPopedomService;
 
     @RequestMapping("/ctse")
     public String test(Model model){
-        Users users = usersService.selectById(1);
-        System.out.println("users======" + users);
+        Method[] method = bossPopedomService.getClass().getMethods();
+        bossPopedomService.test();
         return "";
     }
 }

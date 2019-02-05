@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.erp.dao.mapper.BossPopedomMapper">
+  <resultMap id="BaseResultMap" type="com.test.erp.dao.model.BossPopedom">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="popedom_name" jdbcType="VARCHAR" property="popedomName" />
+    <result column="popedom_type" jdbcType="VARCHAR" property="popedomType" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="lv" jdbcType="TINYINT" property="lv" />
+    <result column="parent_id" jdbcType="VARCHAR" property="parentId" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+  </resultMap>
+
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, popedom_name, popedom_type, url, lv, parent_id, code
+  </sql>
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from boss_popedom
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from boss_popedom
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+
+  <insert id="insert" parameterType="com.test.erp.dao.model.BossPopedom">
+    <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.String">
+      select  replace(uuid(),'-','')   from dual
+    </selectKey>
+    insert into boss_popedom (id, popedom_name, popedom_type, 
+      url, lv, parent_id, 
+      code)
+    values (#{id,jdbcType=VARCHAR}, #{popedomName,jdbcType=VARCHAR}, #{popedomType,jdbcType=VARCHAR}, 
+      #{url,jdbcType=VARCHAR}, #{lv,jdbcType=TINYINT}, #{parentId,jdbcType=VARCHAR}, 
+      #{code,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.test.erp.dao.model.BossPopedom">
+    insert into boss_popedom
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="popedomName != null">
+        popedom_name,
+      </if>
+      <if test="popedomType != null">
+        popedom_type,
+      </if>
+      <if test="url != null">
+        url,
+      </if>
+      <if test="lv != null">
+        lv,
+      </if>
+      <if test="parentId != null">
+        parent_id,
+      </if>
+      <if test="code != null">
+        code,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="popedomName != null">
+        #{popedomName,jdbcType=VARCHAR},
+      </if>
+      <if test="popedomType != null">
+        #{popedomType,jdbcType=VARCHAR},
+      </if>
+      <if test="url != null">
+        #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="lv != null">
+        #{lv,jdbcType=TINYINT},
+      </if>
+      <if test="parentId != null">
+        #{parentId,jdbcType=VARCHAR},
+      </if>
+      <if test="code != null">
+        #{code,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+
+  <update id="updateByExampleSelective" parameterType="map">
+    update boss_popedom
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=VARCHAR},
+      </if>
+      <if test="record.popedomName != null">
+        popedom_name = #{record.popedomName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.popedomType != null">
+        popedom_type = #{record.popedomType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.url != null">
+        url = #{record.url,jdbcType=VARCHAR},
+      </if>
+      <if test="record.lv != null">
+        lv = #{record.lv,jdbcType=TINYINT},
+      </if>
+      <if test="record.parentId != null">
+        parent_id = #{record.parentId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.code != null">
+        code = #{record.code,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update boss_popedom
+    set id = #{record.id,jdbcType=VARCHAR},
+      popedom_name = #{record.popedomName,jdbcType=VARCHAR},
+      popedom_type = #{record.popedomType,jdbcType=VARCHAR},
+      url = #{record.url,jdbcType=VARCHAR},
+      lv = #{record.lv,jdbcType=TINYINT},
+      parent_id = #{record.parentId,jdbcType=VARCHAR},
+      code = #{record.code,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.test.erp.dao.model.BossPopedom">
+    update boss_popedom
+    <set>
+      <if test="popedomName != null">
+        popedom_name = #{popedomName,jdbcType=VARCHAR},
+      </if>
+      <if test="popedomType != null">
+        popedom_type = #{popedomType,jdbcType=VARCHAR},
+      </if>
+      <if test="url != null">
+        url = #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="lv != null">
+        lv = #{lv,jdbcType=TINYINT},
+      </if>
+      <if test="parentId != null">
+        parent_id = #{parentId,jdbcType=VARCHAR},
+      </if>
+      <if test="code != null">
+        code = #{code,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.test.erp.dao.model.BossPopedom">
+    update boss_popedom
+    set popedom_name = #{popedomName,jdbcType=VARCHAR},
+      popedom_type = #{popedomType,jdbcType=VARCHAR},
+      url = #{url,jdbcType=VARCHAR},
+      lv = #{lv,jdbcType=TINYINT},
+      parent_id = #{parentId,jdbcType=VARCHAR},
+      code = #{code,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <cache type="org.mybatis.caches.ehcache.LoggingEhcache" />
+
+  <select id="selectSecond" parameterType="java.lang.String" resultMap="BaseResultMap">
+    SELECT * FROM boss_popedom where parent_id=#{id}
+  </select>
+
+  <select id="getRoleMenuList" parameterType="java.lang.String" resultMap="BaseResultMap">
+      select bp.*
+      from  boss_popedom bp
+      LEFT JOIN boss_role_popedom  brd on brd.popedom_id=bp.id
+      <where>
+        brd.role_id =#{_parameter,jdbcType=VARCHAR}
+      </where>
+  </select>
+
+</mapper>

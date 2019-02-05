@@ -12,12 +12,6 @@
       <module fileurl="file://$PROJECT_DIR$/test-erp/test-erp-rpc-service/test-erp-rpc-service.iml" filepath="$PROJECT_DIR$/test-erp/test-erp-rpc-service/test-erp-rpc-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-erp/test-erp-server/test-erp-server.iml" filepath="$PROJECT_DIR$/test-erp/test-erp-server/test-erp-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-main.iml" filepath="$PROJECT_DIR$/test-main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/u8-trading/u8-trading-client/u8-trading-client.iml" filepath="$PROJECT_DIR$/u8-trading/u8-trading-client/u8-trading-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/u8-trading/u8-trading-common/u8-trading-common.iml" filepath="$PROJECT_DIR$/u8-trading/u8-trading-common/u8-trading-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/u8-trading/u8-trading-dao/u8-trading-dao.iml" filepath="$PROJECT_DIR$/u8-trading/u8-trading-dao/u8-trading-dao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/u8-trading/u8-trading-rpc-api/u8-trading-rpc-api.iml" filepath="$PROJECT_DIR$/u8-trading/u8-trading-rpc-api/u8-trading-rpc-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/u8-trading/u8-trading-rpc-service/u8-trading-rpc-service.iml" filepath="$PROJECT_DIR$/u8-trading/u8-trading-rpc-service/u8-trading-rpc-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/u8-trading/u8-trading-server/u8-trading-server.iml" filepath="$PROJECT_DIR$/u8-trading/u8-trading-server/u8-trading-server.iml" />
     </modules>
   </component>
 </project>

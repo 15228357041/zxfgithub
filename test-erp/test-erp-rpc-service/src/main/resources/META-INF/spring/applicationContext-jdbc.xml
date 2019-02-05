@@ -92,32 +92,32 @@
     </bean>
 
     <!-- 为Mybatis创建SqlSessionFactory，同时指定数据源 -->
-<!--    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
         <property name="mapperLocations" value="classpath*:com/test/erp/mapper/MotorcadeInquiryTelMapper.xml"/>
-    </bean>-->
-    <bean id="sqlSessionFactoryBean" class="com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean">
-        <!-- 数据源 -->
+    </bean>
+    <!--<bean id="sqlSessionFactoryBean" class="com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean">
+        &lt;!&ndash; 数据源 &ndash;&gt;
         <property name="dataSource" ref="dataSource"></property>
         <property name="configLocation" value="classpath:mybatis-config.xml"></property>
-        <!-- 别名处理 -->
+        &lt;!&ndash; 别名处理 &ndash;&gt;
         <property name="typeAliasesPackage" value="com.atguigu.mp.beans"></property>
 
-        <!-- 注入全局MP策略配置 -->
+        &lt;!&ndash; 注入全局MP策略配置 &ndash;&gt;
         <property name="globalConfig" ref="globalConfiguration"></property>
     </bean>
-    <!-- 定义MybatisPlus的全局策略配置-->
+    &lt;!&ndash; 定义MybatisPlus的全局策略配置&ndash;&gt;
     <bean id ="globalConfiguration" class="com.baomidou.mybatisplus.entity.GlobalConfiguration">
-        <!-- 在2.3版本以后，dbColumnUnderline 默认值就是true -->
+        &lt;!&ndash; 在2.3版本以后，dbColumnUnderline 默认值就是true &ndash;&gt;
         <property name="dbColumnUnderline" value="true"></property>
 
-        <!-- 全局的主键策略 -->
+        &lt;!&ndash; 全局的主键策略 &ndash;&gt;
         <property name="idType" value="0"></property>
 
-        <!-- 全局的表前缀策略配置 -->
+        &lt;!&ndash; 全局的表前缀策略配置 &ndash;&gt;
         <property name="tablePrefix" value="tbl_"></property>
-    </bean>
+    </bean>-->
 
 
     <!-- Mapper接口所在包名，Spring会自动查找其下的Mapper -->

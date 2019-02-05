@@ -15,7 +15,7 @@
 
     <!--<dubbo:monitor protocol="registry"/>-->
 
-    <bean id="upmsUserService" class="com.test.erp.rpc.service.impl.UpmsUserServiceImpl"/>
-    <dubbo:service interface="com.test.erp.rpc.api.UpmsUserService" ref="upmsUserService" timeout="10000"/>
+    <bean id="bossPopedomService" class="com.test.erp.rpc.service.impl.BossPopedomServiceImpl"/>
+    <dubbo:service interface="com.test.erp.rpc.api.BossPopedomService" ref="bossPopedomService" timeout="10000"/>
 
 </beans>
