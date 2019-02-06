@@ -27,6 +27,8 @@ public class UsersController {
     public String test(Model model){
         Method[] method = bossPopedomService.getClass().getMethods();
         bossPopedomService.test();
+        bossPopedomService.del("1");
+        System.out.println("热部署测试");
         return "";
     }
 }

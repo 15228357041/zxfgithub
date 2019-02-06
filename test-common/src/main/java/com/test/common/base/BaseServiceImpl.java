@@ -59,7 +59,7 @@ public abstract class BaseServiceImpl<Mapper, Record, Example> implements BaseSe
 	@Override
 	public int deleteByPrimaryKey(String id) {
 		try {
-			DynamicDataSource.setDataSource(DataSourceEnum.MASTER.getName());
+			DynamicDataSource.setDataSource(DataSourceEnum.SLAVE.getName());
 			Method deleteByPrimaryKey = mapper.getClass().getDeclaredMethod("deleteByPrimaryKey", id.getClass());
 			Object result = deleteByPrimaryKey.invoke(mapper, id);
 			return Integer.parseInt(String.valueOf(result));

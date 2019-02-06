@@ -137,4 +137,8 @@
     <!-- 启动注解事务 -->
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
+    <!-- 切面配置 -->
+    <context:component-scan base-package="com.test.common.aspect"/>
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+
 </beans>
