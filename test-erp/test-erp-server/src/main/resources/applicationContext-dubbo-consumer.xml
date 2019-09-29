@@ -15,6 +15,7 @@
     <dubbo:consumer check="false"/>
 
     <dubbo:reference id="bossPopedomService" interface="com.test.erp.rpc.api.BossPopedomService" />
+    <dubbo:reference id="usersService" interface="com.test.erp.rpc.api.UsersService" />
 
 
 </beans>

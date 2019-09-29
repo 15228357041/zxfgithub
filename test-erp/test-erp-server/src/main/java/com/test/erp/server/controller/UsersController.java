@@ -1,13 +1,14 @@
 package com.test.erp.server.controller;
 
 
-import com.test.erp.rpc.api.BossPopedomService;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.test.erp.dao.model.Users;
+import com.test.erp.rpc.api.UsersService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
-import java.lang.reflect.Method;
 
 /**
  * <p>
@@ -21,14 +22,13 @@ import java.lang.reflect.Method;
 @RequestMapping("/users")
 public class UsersController {
     @Resource
-    BossPopedomService bossPopedomService;
-
+    UsersService usersService;
     @RequestMapping("/ctse")
     public String test(Model model){
-        Method[] method = bossPopedomService.getClass().getMethods();
-        bossPopedomService.test();
-        bossPopedomService.del("1");
-        System.out.println("热部署测试");
+        EntityWrapper ew = new EntityWrapper(new Users());
+        ew.eq("id", "1' OR '1'='1");
+        ew.setSqlSelect("id,userkey");
+        usersService.selectOne(ew);
         return "";
     }
 }

@@ -1,4 +1,0 @@
-com\test\erp\server\controller\UsersController.class
-com\test\erp\server\listener\MyServletContextListener.class
-com\test\erp\server\interceptor\ErpInterceptor.class
-com\test\erp\server\Initialize.class

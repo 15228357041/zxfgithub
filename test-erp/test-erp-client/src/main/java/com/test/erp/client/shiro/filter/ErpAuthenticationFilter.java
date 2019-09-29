@@ -36,16 +36,16 @@ import java.util.List;
 
 /**
  * 重写authc过滤器
- * Created by shuu8 on 2017/3/11.
+ * Created by shutest on 2017/3/11.
  */
 public class ErpAuthenticationFilter extends AuthenticationFilter {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ErpAuthenticationFilter.class);
 
     // 局部会话key
-    private final static String U8_ERP_CLIENT_SESSION_ID = "u8-erp-client-session-id";
+    private final static String TEST_ERP_CLIENT_SESSION_ID = "test-erp-client-session-id";
     // 单点同一个code所有局部会话key
-    private final static String U8_ERP_CLIENT_SESSION_IDS = "u8-erp-client-session-ids";
+    private final static String TEST_ERP_CLIENT_SESSION_IDS = "test-erp-client-session-ids";
 
     @Autowired
     ErpSessionDao erpSessionDao;
@@ -55,7 +55,7 @@ public class ErpAuthenticationFilter extends AuthenticationFilter {
         Subject subject = getSubject(request, response);
         Session session = subject.getSession();
         // 判断请求类型
-        String erpType = PropertiesFileUtil.getInstance("u8-erp-client").get("u8.erp.type");
+        String erpType = PropertiesFileUtil.getInstance("test-erp-client").get("test.erp.type");
         session.setAttribute(ErpConstant.ERP_TYPE, erpType);
         if ("client".equals(erpType)) {
             return validateClient(request, response);
@@ -68,9 +68,9 @@ public class ErpAuthenticationFilter extends AuthenticationFilter {
 
     @Override
     protected boolean onAccessDenied(ServletRequest request, ServletResponse response) throws Exception {
-        StringBuffer ssoServerUrl = new StringBuffer(PropertiesFileUtil.getInstance("u8-erp-client").get("u8.erp.sso.server.url"));
+        StringBuffer ssoServerUrl = new StringBuffer(PropertiesFileUtil.getInstance("test-erp-client").get("test.erp.sso.server.url"));
         // server需要登录
-        String erpType = PropertiesFileUtil.getInstance("u8-erp-client").get("u8.erp.type");
+        String erpType = PropertiesFileUtil.getInstance("test-erp-client").get("test.erp.type");
         return true;
 
     }
@@ -85,12 +85,12 @@ public class ErpAuthenticationFilter extends AuthenticationFilter {
         String sessionId = session.getId().toString();
         int timeOut = (int) session.getTimeout() / 1000;
         // 判断局部会话是否登录
-        String cacheClientSession = RedisUtil.get(U8_ERP_CLIENT_SESSION_ID + "_" + session.getId());
+        String cacheClientSession = RedisUtil.get(TEST_ERP_CLIENT_SESSION_ID + "_" + session.getId());
         if (StringUtils.isNotBlank(cacheClientSession)) {
             // 更新code有效期
-            RedisUtil.set(U8_ERP_CLIENT_SESSION_ID + "_" + sessionId, cacheClientSession, timeOut);
+            RedisUtil.set(TEST_ERP_CLIENT_SESSION_ID + "_" + sessionId, cacheClientSession, timeOut);
             Jedis jedis = RedisUtil.getJedis();
-            jedis.expire(U8_ERP_CLIENT_SESSION_IDS + "_" + cacheClientSession, timeOut);
+            jedis.expire(TEST_ERP_CLIENT_SESSION_IDS + "_" + cacheClientSession, timeOut);
             jedis.close();
             // 移除url中的code参数
             if (null != request.getParameter("code")) {
@@ -111,7 +111,7 @@ public class ErpAuthenticationFilter extends AuthenticationFilter {
         if (StringUtils.isNotBlank(code)) {
             // HttpPost去校验code
             try {
-                StringBuffer ssoServerUrl = new StringBuffer(PropertiesFileUtil.getInstance("u8-erp-client").get("u8.erp.sso.server.url"));
+                StringBuffer ssoServerUrl = new StringBuffer(PropertiesFileUtil.getInstance("test-erp-client").get("test.erp.sso.server.url"));
                 HttpClient httpclient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(ssoServerUrl.toString() + "/sso/code");
 
@@ -125,10 +125,10 @@ public class ErpAuthenticationFilter extends AuthenticationFilter {
                     JSONObject result = JSONObject.parseObject(EntityUtils.toString(httpEntity));
                     if (1 == result.getIntValue("code") && result.getString("data").equals(code)) {
                         // code校验正确，创建局部会话
-                        RedisUtil.set(U8_ERP_CLIENT_SESSION_ID + "_" + sessionId, code, timeOut);
+                        RedisUtil.set(TEST_ERP_CLIENT_SESSION_ID + "_" + sessionId, code, timeOut);
                         // 保存code对应的局部会话sessionId，方便退出操作
-                        RedisUtil.sadd(U8_ERP_CLIENT_SESSION_IDS + "_" + code, sessionId, timeOut);
-                        LOGGER.debug("当前code={}，对应的注册系统个数：{}个", code, RedisUtil.getJedis().scard(U8_ERP_CLIENT_SESSION_IDS + "_" + code));
+                        RedisUtil.sadd(TEST_ERP_CLIENT_SESSION_IDS + "_" + code, sessionId, timeOut);
+                        LOGGER.debug("当前code={}，对应的注册系统个数：{}个", code, RedisUtil.getJedis().scard(TEST_ERP_CLIENT_SESSION_IDS + "_" + code));
                         // 移除url中的token参数
                         String backUrl = RequestParameterUtil.getParameterWithOutCode(WebUtils.toHttp(request));
                         // 返回请求资源

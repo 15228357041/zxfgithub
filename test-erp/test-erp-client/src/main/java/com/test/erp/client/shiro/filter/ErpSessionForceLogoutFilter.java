@@ -9,7 +9,7 @@ import javax.servlet.ServletResponse;
 
 /**
  * 强制退出会话过滤器
- * Created by shuu8 on 2017/3/1.
+ * Created by shutest on 2017/3/1.
  */
 public class ErpSessionForceLogoutFilter extends AccessControlFilter {
 

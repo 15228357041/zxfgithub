@@ -1,3 +1,4 @@
+D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\base\MpBaseServiceImpl.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\activemq\MotorcadeMQ.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\base\BaseInterface.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\base\BaseServiceMock.java
@@ -17,11 +18,12 @@ D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\base\Ba
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\base\BaseService.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\util\CookieUtil.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\validator\NotNullValidator.java
+D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\base\MpBaseService.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\util\DateUtil.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\util\Encodes.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\util\JarUtil.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\util\key\SnowflakeIdWorker.java
-D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\util\U8AdminUtil.java
+D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\aspect\ServiceAspect.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\util\SpringContextUtil.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\util\MybatisGeneratorUtil.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\annotation\BaseService.java
@@ -31,6 +33,7 @@ D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\util\ex
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\util\PropertiesFileUtil.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\util\CaptchaUtil.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\util\RequestUtil.java
+D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\util\TestAdminUtil.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\plugin\CommentGenerator.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\util\Reflections.java
 D:\WorkSpace\gittest\zxfgithub\test-common\src\main\java\com\test\common\util\Result.java

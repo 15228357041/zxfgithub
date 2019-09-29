@@ -11,7 +11,15 @@
       <module fileurl="file://$PROJECT_DIR$/test-erp/test-erp-rpc-api/test-erp-rpc-api.iml" filepath="$PROJECT_DIR$/test-erp/test-erp-rpc-api/test-erp-rpc-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-erp/test-erp-rpc-service/test-erp-rpc-service.iml" filepath="$PROJECT_DIR$/test-erp/test-erp-rpc-service/test-erp-rpc-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-erp/test-erp-server/test-erp-server.iml" filepath="$PROJECT_DIR$/test-erp/test-erp-server/test-erp-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-erp/test-erp-sso-server.iml" filepath="$PROJECT_DIR$/test-erp/test-erp-sso-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-main.iml" filepath="$PROJECT_DIR$/test-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-upms/test-upms.iml" filepath="$PROJECT_DIR$/test-upms/test-upms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-upms/zheng-upms-client/zheng-upms-client.iml" filepath="$PROJECT_DIR$/test-upms/zheng-upms-client/zheng-upms-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-upms/zheng-upms-common/zheng-upms-common.iml" filepath="$PROJECT_DIR$/test-upms/zheng-upms-common/zheng-upms-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-upms/zheng-upms-dao/zheng-upms-dao.iml" filepath="$PROJECT_DIR$/test-upms/zheng-upms-dao/zheng-upms-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-upms/zheng-upms-rpc-api/zheng-upms-rpc-api.iml" filepath="$PROJECT_DIR$/test-upms/zheng-upms-rpc-api/zheng-upms-rpc-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-upms/zheng-upms-rpc-service/zheng-upms-rpc-service.iml" filepath="$PROJECT_DIR$/test-upms/zheng-upms-rpc-service/zheng-upms-rpc-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-upms/zheng-upms-server/zheng-upms-server.iml" filepath="$PROJECT_DIR$/test-upms/zheng-upms-server/zheng-upms-server.iml" />
     </modules>
   </component>
 </project>

@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 
 /**
  * 控制器基类
- * Created by u8 on 2017/2/4.
+ * Created by test on 2017/2/4.
  */
 public abstract class BaseController {
 

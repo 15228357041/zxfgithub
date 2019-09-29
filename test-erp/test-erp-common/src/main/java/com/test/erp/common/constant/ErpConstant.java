@@ -6,11 +6,11 @@ import java.util.HashMap;
 
 /**
  * upms系统常量类
- * Created by u8 on 2017/2/18.
+ * Created by test on 2017/2/18.
  */
 public class ErpConstant extends BaseConstants {
 
-    public static final String ERP_TYPE = "u8.erp.type";
+    public static final String ERP_TYPE = "test.erp.type";
 
 
         /**
@@ -283,8 +283,8 @@ public class ErpConstant extends BaseConstants {
         public static final Integer IS_READ = 1;
 
         //消息类型 101-游巴用户报价消息; 102-游巴用户车辆调度消息; 201-车队; 301-司机;
-        public static final Integer MSG_U8USER= 101;
-        public static final Integer MSG_U8USER_SCHEDULING= 102;
+        public static final Integer MSG_TESTUSER= 101;
+        public static final Integer MSG_TESTUSER_SCHEDULING= 102;
         public static final Integer MSG_MOTORCADE = 201;
         public static final Integer MSG_DRIVER = 301;
 
@@ -294,6 +294,6 @@ public class ErpConstant extends BaseConstants {
         public static final Integer CUSTOMER_DEAL_STATUS= 1;
         public static final Integer CUSTOMER_FINISH= 2;
 
-        public static final String customerServiceAchievementsUrl = "http://testagadmin.chinau8.com/agprofitrecord/insert.htm";
+        public static final String customerServiceAchievementsUrl = "http://testagadmin.chinatest.com/agprofitrecord/insert.htm";
 
 }

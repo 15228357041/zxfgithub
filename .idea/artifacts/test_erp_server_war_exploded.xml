@@ -35,8 +35,6 @@
           <element id="library" level="project" name="Maven: org.springframework.session:spring-session:1.3.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-core:1.3.2" />
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-web:1.3.2" />
-          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-quartz:1.3.2" />
-          <element id="library" level="project" name="Maven: org.opensymphony.quartz:quartz:1.6.1" />
           <element id="library" level="project" name="Maven: org.quartz-scheduler:quartz:2.3.0" />
           <element id="library" level="project" name="Maven: com.mchange:c3p0:0.9.5.2" />
           <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.11" />
@@ -59,6 +57,10 @@
           <element id="library" level="project" name="Maven: com.alibaba:dubbo:2.5.6" />
           <element id="library" level="project" name="Maven: org.javassist:javassist:3.20.0-GA" />
           <element id="library" level="project" name="Maven: org.jboss.netty:netty:3.2.5.Final" />
+          <element id="library" level="project" name="Maven: com.github.sgroschupf:zkclient:0.1" />
+          <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper:3.3.3" />
+          <element id="library" level="project" name="Maven: jline:jline:0.9.94" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.14" />
           <element id="library" level="project" name="Maven: org.apache.velocity:velocity:1.7" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
           <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache:2.10.0" />
@@ -74,7 +76,6 @@
           <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.21" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.12" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.12" />
-          <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
           <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.3.1" />
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.2" />
           <element id="library" level="project" name="Maven: io.springfox:springfox-swagger2:2.4.0" />
@@ -127,7 +128,8 @@
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.4" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.8.8" />
           <element id="library" level="project" name="Maven: commons-httpclient:commons-httpclient:3.1" />
-          <element id="library" level="project" name="Maven: com.alipay:alipay:RELEASE" />
+          <element id="library" level="project" name="Maven: com.google.zxing:javase:3.1.0" />
+          <element id="library" level="project" name="Maven: com.google.zxing:core:3.1.0" />
           <element id="archive" name="test-erp-rpc-api-1.0.0.jar">
             <element id="module-output" name="test-erp-rpc-api" />
           </element>

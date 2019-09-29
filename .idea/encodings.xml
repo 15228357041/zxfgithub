@@ -3,16 +3,22 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/test-admin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-erp/pom.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/test-erp/test-erp-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test-erp/test-erp-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test-erp/test-erp-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-erp/test-erp-oss-server/src/main/java/com" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/test-erp/test-erp-oss-server/src/main/resources" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/test-erp/test-erp-oss-server/src/main/webapp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/test-erp/test-erp-rpc-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test-erp/test-erp-rpc-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/u8-trading/u8-trading-client" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/u8-trading/u8-trading-common" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/u8-trading/u8-trading-dao" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/u8-trading/u8-trading-rpc-api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/u8-trading/u8-trading-rpc-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-upms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-upms/zheng-upms-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-upms/zheng-upms-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-upms/zheng-upms-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-upms/zheng-upms-rpc-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-upms/zheng-upms-rpc-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-upms/zheng-upms-server" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

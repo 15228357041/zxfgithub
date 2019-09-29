@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * 用户认证和授权
- * Created by u8 on 2017/1/20.
+ * Created by test on 2017/1/20.
  */
 public class ErpRealm extends AuthorizingRealm {
 
@@ -46,8 +46,8 @@ public class ErpRealm extends AuthorizingRealm {
         String username = (String) authenticationToken.getPrincipal();
         String password = new String((char[]) authenticationToken.getCredentials());
         // client无密认证
-        String erpType = PropertiesFileUtil.getInstance("u8-erp-client").get("u8.erp.type");
-        String pwdConstant= PropertiesFileUtil.getInstance("u8-erp-client").get("u8.reg.pwd.constant");
+        String erpType = PropertiesFileUtil.getInstance("test-erp-client").get("test.erp.type");
+        String pwdConstant= PropertiesFileUtil.getInstance("test-erp-client").get("test.reg.pwd.constant");
         if ("client".equals(erpType)) {
             return new SimpleAuthenticationInfo(username, password, getName());
         }

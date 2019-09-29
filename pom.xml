@@ -12,6 +12,7 @@
        <module>test-common</module>
         <module>test-admin</module>
         <module>test-erp</module>
+        <module>test-upms</module>
     </modules>
 
 

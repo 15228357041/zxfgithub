@@ -1,6 +1,8 @@
 package com.test.common.aspect;
 
 
+import com.test.common.db.DataSourceEnum;
+import com.test.common.db.DynamicDataSource;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -59,6 +61,7 @@ public class ServiceAspect  {
      */
     @Before("pcMethod()")
     public void doBefore() {
+        DynamicDataSource.setDataSource(DataSourceEnum.SLAVE.getName());
         if (log.isInfoEnabled()) {
             log.info("execute method before... ");
         }

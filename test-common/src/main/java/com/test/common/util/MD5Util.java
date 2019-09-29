@@ -3,7 +3,7 @@ package com.test.common.util;
 import java.security.MessageDigest;
 
 /**
- * Created by u8 on 2017/1/19.
+ * Created by test on 2017/1/19.
  */
 public class MD5Util {
 

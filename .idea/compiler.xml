@@ -34,6 +34,12 @@
         <module name="u8-trading-rpc-api" />
         <module name="u8-trading-rpc-service" />
         <module name="u8-trading-server" />
+        <module name="zheng-upms-client" />
+        <module name="zheng-upms-common" />
+        <module name="zheng-upms-dao" />
+        <module name="zheng-upms-rpc-api" />
+        <module name="zheng-upms-rpc-service" />
+        <module name="zheng-upms-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -43,10 +49,14 @@
       <module name="test-erp-client" target="1.8" />
       <module name="test-erp-common" target="1.8" />
       <module name="test-erp-dao" target="1.8" />
+      <module name="test-erp-oss-server" target="1.8" />
       <module name="test-erp-rpc-api" target="1.8" />
       <module name="test-erp-rpc-service" target="1.8" />
       <module name="test-erp-server" target="1.8" />
+      <module name="test-erp-sso-server" target="1.8" />
       <module name="test-main" target="1.8" />
+      <module name="test-upms" target="1.8" />
+      <module name="testerpssoserver" target="1.8" />
       <module name="u8-admin" target="1.8" />
       <module name="u8-common" target="1.8" />
       <module name="u8-erp" target="1.5" />
@@ -64,6 +74,13 @@
       <module name="u8-trading-rpc-api" target="1.5" />
       <module name="u8-trading-rpc-service" target="1.7" />
       <module name="u8-trading-server" target="1.5" />
+      <module name="zheng-upms" target="1.8" />
+      <module name="zheng-upms-client" target="1.8" />
+      <module name="zheng-upms-common" target="1.8" />
+      <module name="zheng-upms-dao" target="1.8" />
+      <module name="zheng-upms-rpc-api" target="1.8" />
+      <module name="zheng-upms-rpc-service" target="1.7" />
+      <module name="zheng-upms-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -2,7 +2,7 @@ package com.test.erp.common.constant;
 
 /**
  * ERP接口结果常量枚举类
- * Created by u8 on 2017/2/18.
+ * Created by test on 2017/2/18.
  */
 public enum ErpResultConstant {
 
