@@ -1,7 +1,6 @@
 package com.test.erp.rpc.service.impl;
 
 
-import com.test.common.annotation.BaseService;
 import com.test.common.base.MpBaseServiceImpl;
 import com.test.erp.dao.mapper.ScheduleJobMapper;
 import com.test.erp.dao.model.ScheduleJob;
@@ -20,7 +19,6 @@ import org.springframework.transaction.annotation.Transactional;
 */
 @Service
 @Transactional
-@BaseService
 public class ScheduleJobServiceImpl extends MpBaseServiceImpl<ScheduleJobMapper, ScheduleJob> implements ScheduleJobService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ScheduleJobServiceImpl.class);

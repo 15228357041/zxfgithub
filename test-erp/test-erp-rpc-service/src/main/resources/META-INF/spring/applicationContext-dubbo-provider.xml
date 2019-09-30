@@ -15,9 +15,13 @@
 
     <!--<dubbo:monitor protocol="registry"/>-->
 
-    <bean id="bossPopedomService" class="com.test.erp.rpc.service.impl.BossPopedomServiceImpl"/>
-    <dubbo:service interface="com.test.erp.rpc.api.BossPopedomService" ref="bossPopedomService" timeout="10000"/>
+
     <bean id="usersService" class="com.test.erp.rpc.service.impl.UsersServiceImpl"/>
     <dubbo:service interface="com.test.erp.rpc.api.UsersService" ref="usersService" timeout="10000"/>
+    <bean id="scheduleJobService" class="com.test.erp.rpc.service.impl.ScheduleJobServiceImpl"/>
+    <dubbo:service interface="com.test.erp.rpc.api.ScheduleJobService" ref="scheduleJobService" timeout="10000"/>
+    <bean id="scheduleJobLogService" class="com.test.erp.rpc.service.impl.ScheduleJobLogServiceImpl"/>
+    <dubbo:service interface="com.test.erp.rpc.api.ScheduleJobLogService" ref="scheduleJobLogService" timeout="10000"/>
+
 
 </beans>

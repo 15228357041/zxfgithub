@@ -29,6 +29,7 @@ public class UsersController {
         ew.eq("id", "1' OR '1'='1");
         ew.setSqlSelect("id,userkey");
         usersService.selectOne(ew);
+        System.out.println("hello world");
         return "";
     }
 }

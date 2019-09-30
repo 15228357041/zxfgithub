@@ -61,6 +61,17 @@
         <javaClientGenerator targetPackage="com.test.erp.dao.mapper" targetProject="D:/WorkSpace/gittest/zxfgithub/test-erp/test-erp-dao/src/main/java" type="XMLMAPPER" />
 
         <!-- 需要映射的表 -->
-                                    <table tableName="users" domainObjectName="Users"></table>
+                                    <table tableName="qrtz_blob_triggers" domainObjectName="QrtzBlobTriggers"></table>
+                                                <table tableName="qrtz_calendars" domainObjectName="QrtzCalendars"></table>
+                                                <table tableName="qrtz_cron_triggers" domainObjectName="QrtzCronTriggers"></table>
+                                                <table tableName="qrtz_fired_triggers" domainObjectName="QrtzFiredTriggers"></table>
+                                                <table tableName="qrtz_job_details" domainObjectName="QrtzJobDetails"></table>
+                                                <table tableName="qrtz_job_listeners" domainObjectName="QrtzJobListeners"></table>
+                                                <table tableName="qrtz_locks" domainObjectName="QrtzLocks"></table>
+                                                <table tableName="qrtz_paused_trigger_grps" domainObjectName="QrtzPausedTriggerGrps"></table>
+                                                <table tableName="qrtz_scheduler_state" domainObjectName="QrtzSchedulerState"></table>
+                                                <table tableName="qrtz_simple_triggers" domainObjectName="QrtzSimpleTriggers"></table>
+                                                <table tableName="qrtz_trigger_listeners" domainObjectName="QrtzTriggerListeners"></table>
+                                                <table tableName="qrtz_triggers" domainObjectName="QrtzTriggers"></table>
                         </context>
 </generatorConfiguration>

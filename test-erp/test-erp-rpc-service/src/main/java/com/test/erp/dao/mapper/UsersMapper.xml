@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.erp.dao.mapper.UsersMapper">
+  <resultMap id="BaseResultMap" type="com.test.erp.dao.model.Users">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="userkey" jdbcType="VARCHAR" property="userkey" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="usergroupid" jdbcType="INTEGER" property="usergroupid" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="telephone" jdbcType="VARCHAR" property="telephone" />
+    <result column="startdate" jdbcType="TIMESTAMP" property="startdate" />
+    <result column="createdate" jdbcType="TIMESTAMP" property="createdate" />
+    <result column="createuserid" jdbcType="INTEGER" property="createuserid" />
+    <result column="modificationdate" jdbcType="TIMESTAMP" property="modificationdate" />
+    <result column="modificationuserid" jdbcType="INTEGER" property="modificationuserid" />
+    <result column="memo" jdbcType="VARCHAR" property="memo" />
+    <result column="picpath" jdbcType="VARCHAR" property="picpath" />
+    <result column="barcode" jdbcType="VARCHAR" property="barcode" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="enddate" jdbcType="TIMESTAMP" property="enddate" />
+    <result column="mobilephone" jdbcType="VARCHAR" property="mobilephone" />
+    <result column="humanid" jdbcType="INTEGER" property="humanid" />
+    <result column="orgid" jdbcType="INTEGER" property="orgid" />
+    <result column="ismulti" jdbcType="INTEGER" property="ismulti" />
+    <result column="tombstone" jdbcType="INTEGER" property="tombstone" />
+    <result column="logintype" jdbcType="INTEGER" property="logintype" />
+    <result column="extravarchar1" jdbcType="VARCHAR" property="extravarchar1" />
+    <result column="extravarchar2" jdbcType="VARCHAR" property="extravarchar2" />
+    <result column="extravarchar3" jdbcType="VARCHAR" property="extravarchar3" />
+    <result column="extravarchar4" jdbcType="VARCHAR" property="extravarchar4" />
+    <result column="extravarchar5" jdbcType="VARCHAR" property="extravarchar5" />
+    <result column="extravarchar6" jdbcType="VARCHAR" property="extravarchar6" />
+    <result column="extravarchar7" jdbcType="VARCHAR" property="extravarchar7" />
+    <result column="extravarchar8" jdbcType="VARCHAR" property="extravarchar8" />
+    <result column="extravarchar9" jdbcType="VARCHAR" property="extravarchar9" />
+    <result column="extravarchar10" jdbcType="VARCHAR" property="extravarchar10" />
+    <result column="extradecimal1" jdbcType="DECIMAL" property="extradecimal1" />
+    <result column="extradecimal2" jdbcType="DECIMAL" property="extradecimal2" />
+    <result column="extradecimal3" jdbcType="DECIMAL" property="extradecimal3" />
+    <result column="extradecimal4" jdbcType="DECIMAL" property="extradecimal4" />
+    <result column="extradecimal5" jdbcType="DECIMAL" property="extradecimal5" />
+    <result column="extraint1" jdbcType="INTEGER" property="extraint1" />
+    <result column="extraint2" jdbcType="INTEGER" property="extraint2" />
+    <result column="extraint3" jdbcType="INTEGER" property="extraint3" />
+    <result column="extraint4" jdbcType="INTEGER" property="extraint4" />
+    <result column="extraint5" jdbcType="INTEGER" property="extraint5" />
+    <result column="extraid1" jdbcType="INTEGER" property="extraid1" />
+    <result column="extraid2" jdbcType="INTEGER" property="extraid2" />
+    <result column="extraid3" jdbcType="INTEGER" property="extraid3" />
+    <result column="extraid4" jdbcType="INTEGER" property="extraid4" />
+    <result column="extraid5" jdbcType="INTEGER" property="extraid5" />
+    <result column="extradatetime1" jdbcType="TIMESTAMP" property="extradatetime1" />
+    <result column="extradatetime2" jdbcType="TIMESTAMP" property="extradatetime2" />
+    <result column="extradatetime3" jdbcType="TIMESTAMP" property="extradatetime3" />
+    <result column="extradatetime4" jdbcType="TIMESTAMP" property="extradatetime4" />
+    <result column="extradatetime5" jdbcType="TIMESTAMP" property="extradatetime5" />
+    <result column="customerid" jdbcType="INTEGER" property="customerid" />
+    <result column="wechatuserid" jdbcType="INTEGER" property="wechatuserid" />
+    <result column="departmentid" jdbcType="INTEGER" property="departmentid" />
+    <result column="ishuman" jdbcType="INTEGER" property="ishuman" />
+    <result column="rootuserid" jdbcType="INTEGER" property="rootuserid" />
+    <result column="shareid" jdbcType="INTEGER" property="shareid" />
+    <result column="saleid" jdbcType="INTEGER" property="saleid" />
+    <result column="officalwechatkey" jdbcType="VARCHAR" property="officalwechatkey" />
+    <result column="postid" jdbcType="INTEGER" property="postid" />
+    <result column="birthdatetime" jdbcType="TIMESTAMP" property="birthdatetime" />
+    <result column="idcard" jdbcType="VARCHAR" property="idcard" />
+    <result column="ismarried" jdbcType="VARCHAR" property="ismarried" />
+    <result column="isbirthed" jdbcType="VARCHAR" property="isbirthed" />
+    <result column="education" jdbcType="VARCHAR" property="education" />
+    <result column="major" jdbcType="VARCHAR" property="major" />
+    <result column="forgetstate" jdbcType="INTEGER" property="forgetstate" />
+    <result column="isadmin" jdbcType="INTEGER" property="isadmin" />
+    <result column="registrationstatus" jdbcType="INTEGER" property="registrationstatus" />
+    <result column="workstation" jdbcType="VARCHAR" property="workstation" />
+    <result column="departmentname" jdbcType="VARCHAR" property="departmentname" />
+    <result column="inspectionhumanid" jdbcType="INTEGER" property="inspectionhumanid" />
+    <result column="factorycode" jdbcType="VARCHAR" property="factorycode" />
+    <result column="changepassword" jdbcType="INTEGER" property="changepassword" />
+    <result column="inspectionhumankey" jdbcType="VARCHAR" property="inspectionhumankey" />
+  </resultMap>
+  <cache type="org.mybatis.caches.ehcache.LoggingEhcache" />
+</mapper>

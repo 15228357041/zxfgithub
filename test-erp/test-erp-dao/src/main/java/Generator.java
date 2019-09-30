@@ -14,7 +14,7 @@ public class Generator {
 
 	private static String MODULE = "test-erp";
 	private static String DATABASE = "geely";
-	private static String TABLE_PREFIX = "users";
+	private static String TABLE_PREFIX = "qrtz";
 	private static String PACKAGE_NAME = "com.test.erp";
 	private static String JDBC_DRIVER = PropertiesFileUtil.getInstance("generator").get("generator.jdbc.driver");
 	private static String JDBC_URL = PropertiesFileUtil.getInstance("generator").get("generator.jdbc.url");

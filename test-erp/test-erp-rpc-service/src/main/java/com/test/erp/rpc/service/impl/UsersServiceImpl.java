@@ -4,7 +4,6 @@ package com.test.erp.rpc.service.impl;
 import com.test.common.base.MpBaseServiceImpl;
 import com.test.erp.dao.mapper.UsersMapper;
 import com.test.erp.dao.model.Users;
-import com.test.erp.dao.model.UsersExample;
 import com.test.erp.rpc.api.UsersService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
