@@ -57,6 +57,7 @@ public class ScheduleJobController extends BaseController {
                scheduleJobService.updateScheduleJob(scheduleJob);
                return ResultUtil.success();
            }else{
+               scheduleJob = scheduleJobService.selectById("1");
                scheduleJobService.createScheduleJob(scheduleJob);
                return ResultUtil.success();
            }

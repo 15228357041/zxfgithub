@@ -86,14 +86,6 @@ public class ScheduleJob implements Serializable {
      */
     private String jobRemark;
 
-    private String createBy;
-
-    private Date createDate;
-
-    private String updateBy;
-
-    private Date updateDate;
-
     private static final long serialVersionUID = 1L;
 
     public String getId() {
@@ -152,37 +144,6 @@ public class ScheduleJob implements Serializable {
         this.jobRemark = jobRemark;
     }
 
-    public String getCreateBy() {
-        return createBy;
-    }
-
-    public void setCreateBy(String createBy) {
-        this.createBy = createBy;
-    }
-
-    public Date getCreateDate() {
-        return createDate;
-    }
-
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
-    }
-
-    public String getUpdateBy() {
-        return updateBy;
-    }
-
-    public void setUpdateBy(String updateBy) {
-        this.updateBy = updateBy;
-    }
-
-    public Date getUpdateDate() {
-        return updateDate;
-    }
-
-    public void setUpdateDate(Date updateDate) {
-        this.updateDate = updateDate;
-    }
 
     @Override
     public String toString() {
@@ -197,10 +158,6 @@ public class ScheduleJob implements Serializable {
         sb.append(", jobCronExpression=").append(jobCronExpression);
         sb.append(", jobStatus=").append(jobStatus);
         sb.append(", jobRemark=").append(jobRemark);
-        sb.append(", createBy=").append(createBy);
-        sb.append(", createDate=").append(createDate);
-        sb.append(", updateBy=").append(updateBy);
-        sb.append(", updateDate=").append(updateDate);
         sb.append("]");
         return sb.toString();
     }
@@ -223,11 +180,7 @@ public class ScheduleJob implements Serializable {
             && (this.getJobParams() == null ? other.getJobParams() == null : this.getJobParams().equals(other.getJobParams()))
             && (this.getJobCronExpression() == null ? other.getJobCronExpression() == null : this.getJobCronExpression().equals(other.getJobCronExpression()))
             && (this.getJobStatus() == null ? other.getJobStatus() == null : this.getJobStatus().equals(other.getJobStatus()))
-            && (this.getJobRemark() == null ? other.getJobRemark() == null : this.getJobRemark().equals(other.getJobRemark()))
-            && (this.getCreateBy() == null ? other.getCreateBy() == null : this.getCreateBy().equals(other.getCreateBy()))
-            && (this.getCreateDate() == null ? other.getCreateDate() == null : this.getCreateDate().equals(other.getCreateDate()))
-            && (this.getUpdateBy() == null ? other.getUpdateBy() == null : this.getUpdateBy().equals(other.getUpdateBy()))
-            && (this.getUpdateDate() == null ? other.getUpdateDate() == null : this.getUpdateDate().equals(other.getUpdateDate()));
+            && (this.getJobRemark() == null ? other.getJobRemark() == null : this.getJobRemark().equals(other.getJobRemark()));
     }
 
     @Override
@@ -241,10 +194,6 @@ public class ScheduleJob implements Serializable {
         result = prime * result + ((getJobCronExpression() == null) ? 0 : getJobCronExpression().hashCode());
         result = prime * result + ((getJobStatus() == null) ? 0 : getJobStatus().hashCode());
         result = prime * result + ((getJobRemark() == null) ? 0 : getJobRemark().hashCode());
-        result = prime * result + ((getCreateBy() == null) ? 0 : getCreateBy().hashCode());
-        result = prime * result + ((getCreateDate() == null) ? 0 : getCreateDate().hashCode());
-        result = prime * result + ((getUpdateBy() == null) ? 0 : getUpdateBy().hashCode());
-        result = prime * result + ((getUpdateDate() == null) ? 0 : getUpdateDate().hashCode());
         return result;
     }
 }
