@@ -28,6 +28,7 @@ public class UsersController {
         EntityWrapper ew = new EntityWrapper(new Users());
         ew.eq("id", "1' OR '1'='1");
         ew.setSqlSelect("id,userkey");
+        ew.orderBy("id", true).orderBy("id", true);
         usersService.selectOne(ew);
         System.out.println("hello world");
         return "";
